@@ -3,13 +3,13 @@ scoreboard players add clips upmc.main.clips 0
 scoreboard players add unusedClips upmc.main.clips 0
 scoreboard players add prevClips upmc.main.clips 0
 scoreboard players add demand upmc.main.clips 0
-scoreboard players add price upmc.main.clips 0
 
 scoreboard objective add upmc.stage1.funds dummy
 scoreboard player add funds upmc.stage1.funds 0
 scoreboard players add avgRev upmc.stage1.funds 0
 scoreboard players add income upmc.stage1.funds 0
 scoreboard players add marketing upmc.stage1.funds 0
+scoreboard players add price upmc.stage1.funds 0
 
 scoreboard objective add upmc.main.trust dummy
 scoreboard players add trust upmc.main.trust 0
