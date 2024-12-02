@@ -45,3 +45,9 @@ scoreboard players add combt upmc.stage3.probe 0
 
 scoreboard objective add upmc.main.stats dummy
 scoreboard players add wirePurchase upmc.main.stats 0
+
+scoreboard objective add upmc.math.disposable dummy
+scoreboard objective add upmc.logic.disposable dummy
+
+scoreboard objective add upmc.math.numbers dummy
+scoreboard players set 1000 upmc.math.numbers 1000
