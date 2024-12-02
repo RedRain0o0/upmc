@@ -20,6 +20,7 @@ scoreboard players add creativity upmc.main.trust 0
 scoreboard objective add upmc.stage1.wire dummy
 scoreboard players add wire upmc.stage1.wire 0
 scoreboard players add cost upmc.stage1.wire 0
+scoreboard players add price upmc.stage1.wire 0
 scoreboard players add supply upmc.stage1.wire 0
 scoreboard players add timer upmc.stage1.wire 0
 scoreboard players add buyerOn upmc.stage1.wire 0
