@@ -1,0 +1,2 @@
+execute if score buyerOn upmc.stage1.wire matches 1 run return run scoreboard players set buyerOn upmc.stage1.wire 0
+execute if score buyerOn upmc.stage1.wire matches 0 run return run scoreboard players set buyerOn upmc.stage1.wire 1
