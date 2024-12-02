@@ -1,0 +1,1 @@
+scoreboard players add price upmc.stage1.funds 1
