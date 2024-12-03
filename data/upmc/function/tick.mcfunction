@@ -12,10 +12,10 @@ function upmc:main/wire/adjust_wire_price
 
 title @a actionbar {"translate": "upmc.actionbar.debug","with": [{"score": {"name": "clips", "objective": "upmc.main.clips"}},{"score": {"name": "wire", "objective": "upmc.stage1.wire"}},{"score": {"name": "funds", "objective": "upmc.stage1.funds"}}]}
 
-execute store result score random upmc.logic.disposable run random value 0..1000000000
-execute if score demand upmc.main.clips matches 100.. run function upmc:main/clips/sell_clips
+execute if score unsoldClips upmc.main.clips matches 1.. store result score random upmc.logic.disposable run random value 0..1000000000
+execute if score unsoldClips upmc.main.clips matches 1.. if score demand upmc.main.clips matches 100.. run function upmc:main/clips/sell_clips
 execute if score demand upmc.main.clips matches ..99 store result score demandBig upmc.logic.disposable run scoreboard players get demand upmc.main.clips
-execute if score demand upmc.main.clips matches ..99 run scoreboard players operation demandBig upmc.logic.disposable *= 1000000 upmc.math.numbers
+execute if score demand upmc.main.clips matches ..99 run scoreboard players operation demandBig upmc.logic.disposable *= 10000000 upmc.math.numbers
 execute if score random upmc.logic.disposable < demandBig upmc.logic.disposable run function upmc:main/clips/sell_clips
 
 ## Tick Reset
