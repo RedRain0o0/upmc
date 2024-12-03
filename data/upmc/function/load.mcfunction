@@ -52,4 +52,4 @@ scoreboard objectives add upmc.logic.disposable dummy
 
 scoreboard objectives add upmc.math.numbers dummy
 scoreboard players set 1000 upmc.math.numbers 1000
-scoreboard players set 10000000 upmc.math.numbers 10000000
+scoreboard players set 1000000 upmc.math.numbers 1000000
